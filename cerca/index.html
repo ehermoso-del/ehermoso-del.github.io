@@ -104,7 +104,45 @@
       </div>
     </div>
   </nav>
+  
+ <!-- Contingut -->
+  <main class="container py-5">
+    <h1 class="display-5 fw-bold mb-4">Benvinguts als Projectes</h1>
+    <p class="lead">Aquesta és una plantilla web amb menú desplegable, icones Font Awesome, mode clar i fosc, i disseny responsiu per mòbil i ordinador utilitzant Bootstrap 5.3.8. Aquest és el punt de partida per editar tot i fer projectes amb el professor Francesc Pérez.</p>
+  <p class="lead">Sóc <u>Elisabeth</u> de <b>4tA ESO</b> de l'<a href="https://agora.xtec.cat/ies-pompeu-fabra-martorell/">Institut Pompeu Fabra.
+  </main>
+<p> En aquesta web veurem projectes realizats durant 4t d'ESO a la materia de digilitalitzacio</p>
 
+  
+  
+  
+  <li>Projecte 1: Comparar aliments ecològics i convencionals pel que fa al nivell de nutrients: vitamines, minerals, polifenols i altres substancies beneficioses.</li>
+  <li> Projecte 2: 22 dies en 22 peus: és una cursa naùtica on aprenem a sumar vectors, calcula distàncies en GPS i altres activitats</li>
+ </ul>
+    
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mode clar/fosc amb canvi d'icona
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    themeToggle.addEventListener('click', () => {
+      if (document.body.getAttribute('data-bs-theme') === 'dark') {
+        document.body.setAttribute('data-bs-theme', 'light');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      } else {
+        document.body.setAttribute('data-bs-theme', 'dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+    });
+  </script>
+</body>
+</html>
 
  <h1>Comparem una maduixa ecològic i convencional: quin te mes nutrients segons la ciencia i segons la IA?</h1>
  <p>He trobat diferents articles cientifics que estudian el meu tema i els trobareu a continuació en format APA7. APA7 es una forma d'escriure un article cientific</p>
