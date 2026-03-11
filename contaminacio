@@ -112,10 +112,18 @@
 <p> The objectives of this research project are: </p>
 <ul>
 <li>
-Yingqing & Eli are studying all data from Paleja that is a city located in Baix Llobregat county. In this county we are using data from Xarxa
+Yingqing & Eli are studying all data from Paleja that is a city located in Baix Llobregat county. In this county we are using data from <a href="https://mediambient.gencat.cat/ca/05_ambits_dactuacio/atmosfera/qualitat_de_laire/avaluacio/xarxa_de_vigilancia_i_previsio_de_la_contaminacio_atmosferica_xvpca/index.html">Air Pollution Prevention and Monitoring Network (XPCVA in catalan)</a>
+corresponding to hourly data of air pollutants from year 1991-2025. Data included: nitrogen oxide (NO),mitrogen dioxid (NO<sub>2</sub>), nitrogen oxides (NO <sub>X</sub>), sulfur dioxide(SO<sub>2>/sub>)
 </li>
-<li></li>
-
+<li>
+Meteorological data is available from <a href"https://www.meteo.cat/observacions/xema"> Meteocat XEMA (Meteorological data server of Catalonia), 
+so we choose the nearest meteorological station that is Vallirana. The data structure is base on semi-hourly data that is, data every 30 minutes from 2009. 
+Data included: temperature, relative humidity, wind direction, wind speed, solar and irradiance.
+</a>
+</li>
+<li>
+  Respiratory infection data are collected from Catalonia Information System for Infection Surveillance (SIVIC) using data from regiion 75, that is Barcelona Metropolitan south region 261 is the identificator of the Primary care centre from Vallirana
+</li>
 </ul>
   </main>
 
