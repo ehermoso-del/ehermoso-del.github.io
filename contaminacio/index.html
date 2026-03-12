@@ -13,25 +13,25 @@
     border-color: #444;
     }
     body[data-bs-theme="dark"] .dropdown-item {
-  color: #f8f9fa !important;
+    color: #f8f9fa !important;
     }
     body[data-bs-theme="dark"] .dropdown-item:hover,
     body[data-bs-theme="dark"] .dropdown-item:focus {
-  background-color: #3c3c3c !important;
-  color: #ffffff !important;    
+    background-color: #3c3c3c !important;
+    color: #ffffff !important;    
     }
 
     /* 2. Botó mode fosc/clar només icona */
     #themeToggle {
-  border: none;
-  background: transparent;
-  font-size: 1.3rem;
-  color: inherit;
+       border: none;
+      background: transparent;
+      font-size: 1.3rem;
+      color: inherit;
     }
 
     /* 3. Hamburguesa blanca en mode fosc */
     .navbar-toggler {
-  border: none;
+    border: none;
     }
     .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -58,20 +58,24 @@
     height: 50px;
   }
     }
-    /* 5. Ajuste del texto */
-    main p, main li {
-      text-align: justify;
-      text-justify: inter-word;
-    }
-    main img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      max-width: 100%;
-      height: auto;
-    }
-        /* 5. Ajuste del texto */
   </style>
+<style>
+.horizontal-list {
+  list-style: none; /* quita bullets */
+  padding: 0;
+  margin: 0;
+  display: flex; /* pone los items en fila */
+  gap: 10px; /* espacio entre los elementos */
+}
+
+.horizontal-list li {
+  border: 1px solid #000; /* borde rectangular */
+  padding: 8px 12px;       /* espacio interno */
+  background-color: #eee;  /* color opcional */
+  text-align: center;
+}
+</style>
+  
 </head>
 <body data-bs-theme="light">
   <!-- Navbar -->
