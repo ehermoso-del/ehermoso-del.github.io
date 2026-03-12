@@ -78,23 +78,12 @@
       <!-- Menú -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- Projecte 1 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="proj1Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-diagram-project me-1"></i> Projectes de recerca
-            </a>
             <ul class="dropdown-menu" aria-labelledby="proj1Dropdown">
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-code me-1"></i> Recera de la maduixa</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-database me-1"></i> Projecte 1.2</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-database me-1"></i> Contaminacio</a></li>
+              <li><a class="dropdown-item" href=""https://ehermoso-del.github.io/cerca/""><i class="fa-solid fa-code me-1"></i> Recera de la maduixa</a></li>
+              <li><a class="dropdown-item" href=""https://ehermoso-del.github.io/contaminacio/""><i class="fa-solid fa-database me-1"></i> Contaminacio</a></li>
            </ul>
           </li>
-          <!-- Projecte 2 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-folder-open me-1"></i> Projectes
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
+                      <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
               <li><a class="dropdown-item" href="https://ehermoso-del.github.io/cerca/"><i class="fa-solid fa-chart-line me-1"></i> Projecte 1. Cerca Ia vs Google academic</a></li>
               <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cogs me-1"></i> Projecte 2. "2 dies en 22 peus</a></li>
             </ul>
