@@ -9,54 +9,54 @@
   <style>
     /* 1. Submenús en mode fosc */
     body[data-bs-theme="dark"] .dropdown-menu {
-      background-color: #2c2c2c !important;
-      border-color: #444;
+ background-color: #2c2c2c !important;
+  border-color: #444;
     }
     body[data-bs-theme="dark"] .dropdown-item {
-      color: #f8f9fa !important;
+  color: #f8f9fa !important;
     }
     body[data-bs-theme="dark"] .dropdown-item:hover,
     body[data-bs-theme="dark"] .dropdown-item:focus {
-      background-color: #3c3c3c !important;
-      color: #ffffff !important;
+  background-color: #3c3c3c !important;
+  color: #ffffff !important;
     }
 
     /* 2. Botó mode fosc/clar només icona */
     #themeToggle {
-      border: none;
-      background: transparent;
-      font-size: 1.3rem;
-      color: inherit;
+  border: none;
+  background: transparent;
+  font-size: 1.3rem;
+  color: inherit;
     }
 
     /* 3. Hamburguesa blanca en mode fosc */
     .navbar-toggler {
-      border: none;
+  border: none;
     }
     .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280,0,0,0.7%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     body[data-bs-theme="dark"] .navbar-toggler-icon {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
     /* 4. Logo circular i adaptatiu */
     .logo {
-      width: 40px;
-      height: 40px;
-      object-fit: cover;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
     }
     @media (max-width: 576px) {
-      .logo {
-        width: 30px;
-        height: 30px;
-      }
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
     }
     @media (min-width: 992px) {
-      .logo {
-        width: 50px;
-        height: 50px;
-      }
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
     }
   </style>
 </head>
@@ -64,34 +64,34 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top">
     <div class="container-fluid">
-      <!-- 5. Logo i text -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="logo.png" alt="Logo" class="logo rounded-circle me-2">
-        <span class="fw-bold">Web d'Eli</span>
-      </a>
+  <!-- 5. Logo i text -->
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="logo.png" alt="Logo" class="logo rounded-circle me-2">
+    <span class="fw-bold">Web d'Eli</span>
+  </a>
 
-      <!-- Botó menú mòbil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <!-- Botó menú mòbil -->
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-      <!-- Menú -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <ul class="dropdown-menu" aria-labelledby="proj1Dropdown">
-              <li><a class="dropdown-item" href=""https://ehermoso-del.github.io/cerca/""><i class="fa-solid fa-code me-1"></i> Recera de la maduixa</a></li>
-              <li><a class="dropdown-item" href=""https://ehermoso-del.github.io/contaminacio/""><i class="fa-solid fa-database me-1"></i> Contaminacio</a></li>
-           </ul>
-          </li>
-                      <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
-              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/cerca/"><i class="fa-solid fa-chart-line me-1"></i> Projecte 1. Cerca Ia vs Google academic</a></li>
-              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cogs me-1"></i> Projecte 2. "2 dies en 22 peus</a></li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Botó mode clar/fosc -->
-        <button id="themeToggle" class="ms-2"><i class="fa-solid fa-moon"></i></button>
-      </div>
+  <!-- Menú -->
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <ul class="dropdown-menu" aria-labelledby="proj1Dropdown">
+  <li><a class="dropdown-item" href=""https://ehermoso-del.github.io/cerca/""><i class="fa-solid fa-code me-1"></i> Recera de la maduixa</a></li>
+  <li><a class="dropdown-item" href=""https://ehermoso-del.github.io/contaminacio/""><i class="fa-solid fa-database me-1"></i> Contaminacio</a></li>
+   </ul>
+  </li>
+  <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
+  <li><a class="dropdown-item" href="https://ehermoso-del.github.io/cerca/"><i class="fa-solid fa-chart-line me-1"></i> Projecte 1. Cerca Ia vs Google academic</a></li>
+  <li><a class="dropdown-item" href="#"><i class="fa-solid fa-cogs me-1"></i> Projecte 2. "2 dies en 22 peus</a></li>
+    </ul>
+  </li>
+    </ul>
+    <!-- Botó mode clar/fosc -->
+    <button id="themeToggle" class="ms-2"><i class="fa-solid fa-moon"></i></button>
+  </div>
     </div>
   </nav>
 
@@ -124,7 +124,7 @@ Data included: temperature, relative humidity, wind direction, wind speed, solar
     <p class="lead"> Hourly variation </p>
     <ul>
     <li>
-      The hourly pattern shows a strong morning peak around 7–9 h, when traffic increases during commuting hours. At this moment, NO and NO₂ rise sharply, producing the highest values of NOₓ.
+  The hourly pattern shows a strong morning peak around 7–9 h, when traffic increases during commuting hours. At this moment, NO and NO₂ rise sharply, producing the highest values of NOₓ.
 
 After this peak, concentrations decrease during midday, likely due to better atmospheric dispersion caused by higher temperatures and sunlight. A smaller increase appears in the evening, related to the second traffic peak when people return home.
 
@@ -132,16 +132,16 @@ SO₂ remains very low and stable during the entire day, indicating that local s
     </li>
     <p class="lead"> Monthly variation</p>
     <li>
-      Pollution levels show a clear seasonal cycle. The highest concentrations of nitrogen oxides occur in winter months (December–February). During this period, colder conditions and weaker air circulation can trap pollutants close to the ground.
+  Pollution levels show a clear seasonal cycle. The highest concentrations of nitrogen oxides occur in winter months (December–February). During this period, colder conditions and weaker air circulation can trap pollutants close to the ground.
 
 In contrast, concentrations decrease in spring and summer, reaching the lowest values between May and August. Warmer temperatures and stronger atmospheric mixing help disperse pollutants more efficiently.
 
 Levels begin to increase again in autumn, as meteorological conditions become more stable.
     </li>
     <p class="lead"> General interpretation and conclusion</p>
-      <ul>
+  <ul>
     <li>
-      Overall, the results suggest that road traffic is the main source of nitrogen oxide pollution in Pallejà. The clear peaks during commuting hours and higher levels during weekdays strongly support this idea.
+  Overall, the results suggest that road traffic is the main source of nitrogen oxide pollution in Pallejà. The clear peaks during commuting hours and higher levels during weekdays strongly support this idea.
 
 Seasonal differences also indicate that meteorological conditions influence air quality, with winter conditions favoring pollutant accumulation and summer conditions improving dispersion.
 
@@ -168,66 +168,66 @@ Taken together, the two calendars illustrate how air pollution changes day by da
 <ul>
 <p class"lead"> Meteorological data</p>
    <ul>
-     <li>
-       Meteorological information was obtained from the XEMA Meteocat network (Meteorological Data Server of Catalonia). The closest meteorological station to the study area is located in Vallirana, which was therefore selected for the analysis. The dataset consists of semi-hourly measurements, meaning that data are recorded every 30 minutes, and the records are available from 2009 onwards.
+ <li>
+   Meteorological information was obtained from the XEMA Meteocat network (Meteorological Data Server of Catalonia). The closest meteorological station to the study area is located in Vallirana, which was therefore selected for the analysis. The dataset consists of semi-hourly measurements, meaning that data are recorded every 30 minutes, and the records are available from 2009 onwards.
 
 The dataset includes several atmospheric variables, such as temperature, relative humidity, atmospheric pressure, wind direction, wind speed, and solar irradiance.
 
 However, in the analysed period the variables corresponding to temperature (X30) and relative humidity (X31) contain missing values, so they were excluded from the descriptive analysis
-     </li>
-      <ul>
-      <img src="">
-      <li>
-        Consequently, the exploratory analysis focuses on the remaining available variables: atmospheric pressure (X32), wind direction (X33), wind speed (X34), and solar irradiance (X36).
-      </li>
-      <img src="">
-      <li>
-        The figure presents the temporal evolution of these meteorological variables from 2009 to 2025 at the Vallirana station. Each variable appears in a separate panel with different colors. These factors play an important role in the dispersion, accumulation, and chemical transformation of air pollutants in the area.
-      </li>
-      <p class"lead"> Respiratory infection data</p>
-        <ul>
-          <li>
-            Information on respiratory infections was obtained from the Catalonia Information System for Infection Surveillance (SIVIC). The data correspond to Region 75 (Barcelona Metropolitan Sud), and the Primary Care Centre in Vallirana, identified by the code 261.
-          </li>
-          <ul>
-       <p class"lead"> BRONCHIOLITIS ALL </p>
-        <img src="">
-        <ul>
-          <li>
-            Between 2011 and 2026, the Vallirana Primary Care Centre reported 916 bronchiolitis cases, with an average of 1.3 cases per day. The graph shows clear seasonal peaks, especially during winter, which is consistent with the typical epidemiology of bronchiolitis.
-          </li>
-          <ul>
-             <p class"lead">Year: 2015</p> 
-            <img src="">
-          <ul>
-            <li>
-              2015, a total of 79 cases were registered, corresponding to an average of 1.4 cases per day. The highest daily value occurred on April 7, with 8 cases. The graph shows fluctuations throughout the year, indicating variations in bronchiolitis incidence over time.
-            </li>
-            <ul>
-      <p class"lead">Women data</p>  
-              <img src="">
-            <p class"lead"Men data</p>
-            <img src="">
-              <li>
-                440 cases were reported in females and 506 in males, both averaging about 1.1 cases per day. The data indicate a slightly higher incidence among males, although the overall seasonal trends are similar for both sexes.
-              </li>
-          <ul>
-           <p class"lead">Flu</p>
-<p class"lead">All</p>
-            <img src="">
-            <li>
-              From October 3, 2011, to February 5, 2026, a total of 5,482 influenza cases were recorded, with an average of 3.4 daily cases. The graph highlights clear seasonal peaks, typical of annual influenza outbreaks.
-            </li>
-            <ul>
-<p class"lead">Year 2025</p>
-              <img src="">
+ </li>
+  <ul>
+  <img src="">
+  <li>
+    Consequently, the exploratory analysis focuses on the remaining available variables: atmospheric pressure (X32), wind direction (X33), wind speed (X34), and solar irradiance (X36).
+  </li>
+  <img src="">
+  <li>
+    The figure presents the temporal evolution of these meteorological variables from 2009 to 2025 at the Vallirana station. Each variable appears in a separate panel with different colors. These factors play an important role in the dispersion, accumulation, and chemical transformation of air pollutants in the area.
+  </li>
+  <p class"lead"> Respiratory infection data</p>
+    <ul>
+  <li>
+    Information on respiratory infections was obtained from the Catalonia Information System for Infection Surveillance (SIVIC). The data correspond to Region 75 (Barcelona Metropolitan Sud), and the Primary Care Centre in Vallirana, identified by the code 261.
+  </li>
+  <ul>
+   <p class"lead"> BRONCHIOLITIS ALL </p>
+    <img src="">
+    <ul>
+  <li>
+    Between 2011 and 2026, the Vallirana Primary Care Centre reported 916 bronchiolitis cases, with an average of 1.3 cases per day. The graph shows clear seasonal peaks, especially during winter, which is consistent with the typical epidemiology of bronchiolitis.
+  </li>
+  <ul>
+ <p class"lead">Year: 2015</p> 
+    <img src="">
   <ul>
     <li>
-      Between January 2 and December 31, 2025, the Vallirana Primary Care Centre registered 1,070 influenza cases across all age groups and sexes. The average daily value was 4.8 cases, indicating a particularly active flu season. The graph presents distinct peaks, confirming that 2025 had the highest number of flu cases within the analysed period.
+  2015, a total of 79 cases were registered, corresponding to an average of 1.4 cases per day. The highest daily value occurred on April 7, with 8 cases. The graph shows fluctuations throughout the year, indicating variations in bronchiolitis incidence over time.
+    </li>
+    <ul>
+  <p class"lead">Women data</p>  
+  <img src="">
+    <p class"lead"Men data</p>
+    <img src="">
+  <li>
+    440 cases were reported in females and 506 in males, both averaging about 1.1 cases per day. The data indicate a slightly higher incidence among males, although the overall seasonal trends are similar for both sexes.
+  </li>
+  <ul>
+   <p class"lead">Flu</p>
+<p class"lead">All</p>
+    <img src="">
+    <li>
+  From October 3, 2011, to February 5, 2026, a total of 5,482 influenza cases were recorded, with an average of 3.4 daily cases. The graph highlights clear seasonal peaks, typical of annual influenza outbreaks.
+    </li>
+    <ul>
+<p class"lead">Year 2025</p>
+  <img src="">
+  <ul>
+    <li>
+  Between January 2 and December 31, 2025, the Vallirana Primary Care Centre registered 1,070 influenza cases across all age groups and sexes. The average daily value was 4.8 cases, indicating a particularly active flu season. The graph presents distinct peaks, confirming that 2025 had the highest number of flu cases within the analysed period.
     </li>
     <ul>
  <p class"lead">Age group: 35–39</p>
-      <img src="">
+  <img src="">
 <li>
 Between November 24, 2011, and February 5, 2026, the 35–39 age group recorded 597 cases. The peaks in the graph follow the typical seasonal waves of influenza, showing when this age group was most affected.
 </li>
@@ -266,7 +266,7 @@ Between March 11, 2020, and October 13, 2025, the 45–49 age group registered 1
 <p class"lead">Women</p>
 <img src="">
 <li>
-Between January 28, 2020, and January 19, 2026, 5,781 cases were reported among females, with an average of 4.8 daily cases. The graph shows pronounced peaks, corresponding to the major waves of COVID-19 transmission during the period.         </li>
+Between January 28, 2020, and January 19, 2026, 5,781 cases were reported among females, with an average of 4.8 daily cases. The graph shows pronounced peaks, corresponding to the major waves of COVID-19 transmission during the period. </li>
 <ul>
 <p class"lead">Men</p>
 <img src="">
@@ -276,7 +276,7 @@ During the same period, males also recorded 5,781 cases, with a similar average 
  <ul>
 <p class "lead">Overall interpretation</p>
  <li>
-               Respiratory infections such as bronchiolitis, COVID-19, and influenza show clear temporal patterns. Bronchiolitis mainly affects infants and tends to peak during winter, while COVID-19 and influenza affect all age groups, although cases increase during specific periods of the year.
+   Respiratory infections such as bronchiolitis, COVID-19, and influenza show clear temporal patterns. Bronchiolitis mainly affects infants and tends to peak during winter, while COVID-19 and influenza affect all age groups, although cases increase during specific periods of the year.
 
 Some age groups appear to be more frequently affected by certain diseases. For example, adults aged 45–49 recorded the highest number of COVID-19 cases, whereas adults aged 35–39 showed higher influenza incidence.
 
@@ -284,21 +284,21 @@ Differences between sexes are generally small, although men sometimes present sl
 
 Meteorological conditions such as wind, atmospheric pressure, and solar radiation influence how air pollution disperses and accumulates, which may in turn affect respiratory health. In general, respiratory infections tend to rise and fall following predictable seasonal patterns, and understanding these trends helps identify which groups are most vulnerable and when risk periods are more likely to occur.
  </li>
-             
-         <script>script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+ 
+ <script>script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     // Mode clar/fosc amb canvi d'icona
     const themeToggle = document.getElementById('themeToggle');
     const themeIcon = themeToggle.querySelector('i');
 
     themeToggle.addEventListener('click', () => {
-      if (document.body.getAttribute('data-bs-theme') === 'dark') {
-        document.body.setAttribute('data-bs-theme', 'light');
-        themeIcon.classList.remove('fa-sun');
-        themeIcon.classList.add('fa-moon');
-      } else {
-        document.body.setAttribute('data-bs-theme', 'dark');
-        themeIcon.classList.remove('fa-moon');
-        themeIcon.classList.add('fa-sun');
-      }
+  if (document.body.getAttribute('data-bs-theme') === 'dark') {
+    document.body.setAttribute('data-bs-theme', 'light');
+    themeIcon.classList.remove('fa-sun');
+    themeIcon.classList.add('fa-moon');
+  } else {
+    document.body.setAttribute('data-bs-theme', 'dark');
+    themeIcon.classList.remove('fa-moon');
+    themeIcon.classList.add('fa-sun');
+  }
     });
   </script>
