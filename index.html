@@ -61,55 +61,88 @@
     
   </style>
 </head>
-<body data-bs-theme="light">
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top">
-    <div class="container-fluid">
-      <!-- 5. Logo i text -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="logo.png" alt="Logo" class="logo rounded-circle me-2">
-        <span class="fw-bold">Web d'alumne</span>
-      </a>
+<body class="bg-slate-950 text-slate-200 antialiased">
+<nav class="bg-slate-900 border border-slate-700 rounded-2xl mx-4 mt-4 px-4 py-3 shadow-lg">
+  <div class="flex items-center gap-8">
+    
+    <!-- Logo -->
+    <a href="https://ehermoso-del.github.io" class="flex items-center gap-3">
+      <img src="https://ehermoso-del.github.io/logo.png" width="50" height="50" class="w-10 h-10 rounded-full">
+      <span class="font-bold text-white text-lg">Web de Eli</span>
+    </a>
 
-      <!-- Botó menú mòbil -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <!-- Botón móvil -->
+    <button id="menuBtn" class="lg:hidden text-white text-2xl">☰</button>
 
-      <!-- Menú -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <!-- Projecte 1 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="proj1Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-diagram-project me-1"></i> projectes de recerca
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="proj1Dropdown">
-              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/cerca/"><i class="fa-solid fa-seedling me-1"></i> Recerca de la mandarina</a></li>
-<li>
-  <a class="dropdown-item" href="https://ehermoso-del.github.io/contaminacio/" target="_blank">
-    <i class="fa-solid fa-smog me-1"></i> Contaminació i salut respiratòria al Pallejà
-  </a>
-</li>            </ul>
-          </li>
-          <!-- Projecte 2 -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <i class="fa-solid fa-folder-open me-1"></i> Projecte: 22 dies en 22 peus
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
-              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/introduccio"><i class="fa-solid fa-file-lines me-1"></i>Introducció del projecte</a></li>
-              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/vectors"><i class="fa-solid fa-compass me-1"></i> Calculem rumbs</a></li>
-              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/distancies"><i class="fa-solid fa-arrows-left-right-to-line me-1"></i> Calculem distàncies</a></li>
+    <!-- Menú -->
+    <div id="menu" class="hidden lg:flex gap-6 items-center text-sm">
 
-            </ul>
-          </li>
-        </ul>
-        <!-- Botó mode clar/fosc -->
-        <button id="themeToggle" class="ms-2"><i class="fa-solid fa-moon"></i></button>
+      <!-- Dropdown 1 -->
+      <div class="relative">
+        <button onclick="toggleDropdown('dd1')" class="text-slate-300 hover:text-white">
+          Cerca IA vs Google Academic
+        </button>
+        <div id="dd1" class="hidden absolute left-0 bg-slate-800 border border-slate-600 rounded-xl mt-2 p-2 min-w-[220px]">
+          <a href="https://ehermoso-del.github.io/cerca" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Recerca Maduixa
+          </a>
+        </div>
       </div>
+
+      <!-- Dropdown 2 -->
+      <div class="relative">
+        <button onclick="toggleDropdown('dd2')" class="text-slate-300 hover:text-white">
+          22 dies en 22 peus
+        </button>
+        <div id="dd2" class="hidden absolute left-0 bg-slate-800 border border-slate-600 rounded-xl mt-2 p-2 min-w-[300px]">
+          <a href="https://ehermoso-del.github.io/introduccio" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Introducció al Projecte
+          </a>
+          <a href="https://ehermoso-del.github.io/vectors" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Calculem rumbs amb vectors
+          </a>
+          <a href="https://ehermoso-del.github.io/distancies" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Calculem distancies amb GPS
+          </a>
+        </div>
+      </div>
+
+      <!-- Dropdown 3 -->
+      <div class="relative">
+        <button onclick="toggleDropdown('dd3')" class="text-slate-300 hover:text-white">
+          Contaminació i Salut al Baix Llobregat
+        </button>
+        <div id="dd3" class="hidden absolute left-0 bg-slate-800 border border-slate-600 rounded-xl mt-2 p-2 min-w-[260px]">
+          <a href="https://ehermoso-del.github.io/contaminacio" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Contaminació i Salut Respiratòria a Pallejà
+          </a>
+          <a href="https://ehermos-del.github.io/epi" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Environmental Epidemiological Analysis
+          </a>
+          <a href="https://ehermoso-del.github.io/dlnm" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Distributed Lag Non-linear Models
+          </a>
+          <a href="https://ehermoso-del.github.io/epidemiologia" class="block px-3 py-2 hover:bg-slate-700 rounded-lg">
+            Resultats de Pallejà
+          </a>
+        </div>
+      </div>
+
     </div>
-  </nav>
+  </div>
+
+  <!-- Menú móvil -->
+  <div id="mobileMenu" class="hidden flex-col gap-2 mt-4 lg:hidden text-sm">
+    <a href="https://ehermoso-del.github.io/cerca" class="block px-3 py-2 bg-slate-800 rounded-lg">Recerca Maduixa</a>
+    <a href="https://ehermoso-del.github.io/introduccio" class="block px-3 py-2 bg-slate-800 rounded-lg">Introducció al Projecte</a>
+    <a href="https://ehermoso-del.github.io/vectors" class="block px-3 py-2 bg-slate-800 rounded-lg">Calculem rumbs amb vectors</a>
+    <a href="https://ehermoso-del.github.io/distancies" class="block px-3 py-2 bg-slate-800 rounded-lg">Calculem distancies amb GPS</a>
+    <a href="https://ehermoso-del.github.io/contaminacio" class="block px-3 py-2 bg-slate-800 rounded-lg">Contaminació i Salut Respiratòria</a>
+    <a href="https://ehermoso-del.github.io/epi" class="block px-3 py-2 bg-slate-800 rounded-lg">Environmental Epidemiological Analysis</a>
+    <a href="https://ehermoso-del.github.io/dlnm" class="block px-3 py-2 bg-slate-800 rounded-lg">DLNM</a>
+    <a href="https://ehermoso-del.github.io/epidemiologia" class="block px-3 py-2 bg-slate-800 rounded-lg">Resultats</a>
+  </div>
+</nav>
 
   <!-- Contingut -->
   <main class="container py-5">
