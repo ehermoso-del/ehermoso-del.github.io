@@ -180,6 +180,63 @@
   </style>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light shadow sticky-top">
+    <div class="container-fluid">
+      <!-- 5. Logo i text -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="https://Ying119988.github.io/logo.png" width="50" height="50" alt="Logo" class="logo rounded-circle me-2">
+        <span class="fw-bold">Web de Eli</span>
+      </a>
+
+      <!-- Botó menú mòbil -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Projecte 1 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="proj1Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-diagram-project me-1"></i> Cerca IA vs Google acadèmic
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="proj1Dropdown">
+              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/cerca"><i class="fa-solid fa-leaf me-1"></i> Recerca enciam</a></li>
+          </li> </ul>
+          <!-- Projecte 2 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-folder-open me-1"></i> 22 dies en 22 peus
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
+              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/introduccio"><i class="fa-solid fa-file-lines me-1"></i> Introducció al projecte</a></li>
+              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/vectors"><i class="fa-regular fa-compass me-1"></i> Calculem rumbs amb vectors</a></li>
+               <li><a class="dropdown-item" href="https://ehermoso-del.github.io/distancies"><i class="fa-solid fa-arrows-left-right-to-line me-1"></i> Calculem distàncies amb GPS</a></li>
+            </ul>
+          </li>
+        
+        <!-- Projecte 3 -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="proj2Dropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          
+              <i class="fa-solid fa-folder-open me-1"></i> Contaminació i salut al Baix Llobregat
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="proj2Dropdown">
+              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/contaminacio"><i class="fa-solid fa-head-side-mask me-1"></i> Contaminació i salut respiratòria de Pallejà</a></li>
+              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/epi"><i class="fa-solid fa-head-side-mask me-1"></i>Environmental Epidemiological Analysis</a></li>
+              <li><a class="dropdown-item" href="https://ehermoso-del.github.io/dlnm"><i class="fa-solid fa-smog me-1"></i>Distributed Lag Non-linear Models</a></li>
+               <li><a class="dropdown-item" href="https://ehermoso-del.github.io/epidemiologia"><i class="fa-regular fa-industry me-1"></i>Resultats de Pallejà</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Botó mode clar/fosc -->
+        <button id="themeToggle" class="ms-2"><i class="fa-solid fa-moon"></i></button>
+      </div>
+    </div>
+  </nav>
+<body>
   <header class="hero text-center">
     <div class="container">
       <h1 class="display-5 fw-bold mb-3"><i class="fa-solid fa-chart-line text-info me-2"></i>DLNM Explorer</h1>
@@ -204,15 +261,15 @@
         <label class="form-label fw-semibold">Exemples (City1 / City2)</label>
         <select id="demoDataset" class="form-select form-select-lg">
           <option value="">-- Puja un arxiu propi --</option>
-                                <option value="https://Ying119988.github.io/epi/merged_df..csv">🏙️ Pallejà</option>
-                                <option value="https://Ying119988.github.io/epi/martorell.csv">🏙️ Martorell</option>
-                                <option value="https://Ying119988.github.io/epi/sagnier.csv">🏙️ El Plat(Sagnier)</option>
-                                <option value="https://Ying119988.github.io/epi/barca.csv">🏙️ Sant Andreu de la Barca</option>
-                                <option value="https://Ying119988.github.io/epi/gava.csv">🏙️ Gavà</option>
-                                <option value="https://Ying119988.github.io/epi/santvicencdelshorts.csv">🏙️ Sant Vicenç dels Horts</option>
-                                <option value="https://Ying119988.github.io/epi/hospitalet.csv">🏙️ L'Hospitalet de Llobregat</option>
-                                <option value="https://Ying119988.github.io/epi/jardins_pau.csv">🏙️ El Plat(Jardins de la Pau)</option>
-                                <option value="https://Ying119988.github.io/epi/viladecans.csv">🏙️ Viladecans</option>
+                                <option value="https://ehermoso-del.github.io/epi/merged_df..csv">🏙️ Pallejà</option>
+                                <option value="https://ehermoso-del.github.io/epi/martorell.csv">🏙️ Martorell</option>
+                                <option value="https://ehermoso-del.github.io/epi/sagnier.csv">🏙️ El Plat(Sagnier)</option>
+                                <option value="https://ehermoso-del.github.io/epi/barca.csv">🏙️ Sant Andreu de la Barca</option>
+                                <option value="https://ehermoso-del.github.io/epi/gava.csv">🏙️ Gavà</option>
+                                <option value="https://ehermoso-del.github.io/epi/santvicencdelshorts.csv">🏙️ Sant Vicenç dels Horts</option>
+                                <option value="https://ehermoso-del.github.io/epi/hospitalet.csv">🏙️ L'Hospitalet de Llobregat</option>
+                                <option value="https://ehermoso-del.github.io/epi/jardins_pau.csv">🏙️ El Plat(Jardins de la Pau)</option>
+                                <option value="https://ehermoso-del.github.io/epi/viladecans.csv">🏙️ Viladecans</option>
         </select>
       </div>
       <div class="col-md-5">
